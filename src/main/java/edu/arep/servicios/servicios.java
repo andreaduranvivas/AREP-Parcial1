@@ -5,7 +5,9 @@ import edu.arep.backend.ChatAPI;
 public class servicios {
 
     public static String subirResultado (String comando){
-        String[] comandos = comando.split(",");
+        String[] comandos = comando.split("%2");
+        System.out.println("EL COMANDO ES "+ comando);
+
         String funcion = comandos[0];
         String respuesta = "";
         ChatAPI chat = new ChatAPI();
